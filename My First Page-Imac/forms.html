@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <button>Formu Gönderemez</button>
+
+    <form action="/food">
+<button type="button">Lütfen formu gönderme!!</button>
+<label for="username">Kullanıcı adı giriniz</label>
+<input type="text" placeholder= "Kullanıcı Adı" name="username" id="username" required/>
+<label for="password">Şifre Giriniz</label>
+<input type="text" name="password" id="password" required placeholder="Şifre"/>
+<button type="submit">Gönder!</button>
+<label for="color">Renk Seçiniz</label>
+<input type="color" name=" color" id="color"/>
+<label for="number">Sayı giriniz:</label>
+<input type="number"/>
+<button>submit</button>
+</form>
+<h2>Input</h2>
+<div>
+<input type="checkbox" id="confirm" checked>
+<label for="confirm">Kabul Ediyorum</label>
+</div>
+
+<div>
+  <label for="size">XS</label>
+<input type="radio" id="xs" name="size" value="xs" >
+<label for="size">M</label>
+<input type="radio" id="m" name="size" value="m">
+<label for="size">XL</label>
+<input type="radio" id="xl" name="size" value="xl">
+</div>
+<div>
+  <label for="meal select">Yemeğinizi seçiniz</label>
+  <select name="meals" id="meal select">
+    <option value="">Please choose a meal</option>
+    <option value="Salata">Salata</option>
+    <option value="Et">Et</option>
+    <option value="Sebze">Sebze</option>
+    <option value="Meyve">Meyve</option>
+  </select>
+</div>
+<div>
+  <label for="peynirMiktar">Evdeki Peynir Miktarı</label>
+<input type="range" id="peynirMiktar" name="peynirMiktar" min="0" max="200" step="10">
+</div>
+<p></p>
+<div>
+  <label for="özelİstek">Özel İstek?</label>
+</div>
+<div>
+  <textarea name="özelİstek" id="özelİstek" cols="30" rows="5" >İsteklerinizi yazın ?</textarea>
+</div>
+
+<p></p>
+<div>
+<button type="submit">submit</button>
+</button>
+
+</div>
+
+<p></p>
+<div>
+  <h2>Validations</h2>
+  <form action="">
+  <label for="userName">İsim giriniz</label>
+  <input type="text" id="userName" name="userName" required/>
+  <button type="submit">submit</button>
+</div>
+</form>
+
+<form action="">
+<label for="İsim">İsim giriniz</label>
+<input type="text" id="İsim" name="isim" minlength="5" required/>
+<label for="kullanıcıadı">Kullanıcı adı</label>
+<input type="text" id="kullanıcıadı" name="kullanıcıadı" minlength="5" maxlength="10" required/>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
